@@ -7,7 +7,7 @@ from threading import Lock
 app = Flask(__name__)
 
 # MongoDB connection 
-mongo_uri = 'mongodb://diceUser:Admin01.Um6p@10.30.25.21:2717/?authMechanism=DEFAULT'
+mongo_uri = 'mongodb://'
 client = MongoClient(mongo_uri, minPoolSize=10, maxPoolSize=50)
 
 def get_db(db_name):
